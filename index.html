@@ -1,22 +1,15 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Project</title>
 
-  <!-- Theme toggling adaptation to user settings -->
-  <!-- <script>
-    let localSTheme = localStorage.getItem('theme');
-    let themeToSet = localSTheme;
-
-    if (!localSTheme) {
-      themeToSet = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-    }
-
-    document.documentElement.setAttribute('data-theme', themeToSet);
-  </script> -->
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/reset.css">
@@ -24,6 +17,77 @@
 </head>
 <body>
 
+
+  <div class="card">
+    <img class="card__mobile-illustration" src="img/illustration-woman-online-mobile.svg" alt="" width="237" height="180" aria-hidden="true">
+    <img class="card__box-img" src="img/illustration-box-desktop.svg" alt="" width="191" height="184" aria-hidden="true">
+    <div class="card__content">
+      <h1 class="card__heading">FAQ</h1>
+      <div class="card__accordion accordion">
+
+        <section class="accordion__item">
+          <header class="accordion__item-header">
+            <h3 class="accordion__heading">How many team members can I invite?</h3>
+            <button class="accordion__toggler-button" type="button" aria-label="Toggle content">
+              <img class="accordion__arrow-icon" src="img/icon-arrow-down.svg" alt="" width="8" height="4" aria-hidden="true">
+            </button>
+          </header>
+          <div class="accordion__item-content">
+            <p class="accordion__paragraph">You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.</p>
+          </div>
+        </section>
+
+        <section class="accordion__item accordion__item--active">
+          <header class="accordion__item-header">
+            <h3 class="accordion__heading">What is the maximum file upload size?</h3>
+            <button class="accordion__toggler-button" type="button" aria-label="Toggle content">
+              <img class="accordion__arrow-icon" src="img/icon-arrow-down.svg" alt="" width="8" height="4" aria-hidden="true">
+            </button>
+          </header>
+          <div class="accordion__item-content">
+            <p class="accordion__paragraph">No more than 2GB. All files in your account must fit your allotted storage space.</p>
+          </div>
+        </section>
+
+        <section class="accordion__item">
+          <header class="accordion__item-header">
+            <h3 class="accordion__heading">How do I reset my password?</h3>
+            <button class="accordion__toggler-button" type="button" aria-label="Toggle content">
+              <img class="accordion__arrow-icon" src="img/icon-arrow-down.svg" alt="" width="8" height="4" aria-hidden="true">
+            </button>
+          </header>
+          <div class="accordion__item-content">
+            <p class="accordion__paragraph">Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.</p>
+          </div>
+        </section>
+
+        <section class="accordion__item">
+          <header class="accordion__item-header">
+            <h3 class="accordion__heading">Can I cancel my subscription?</h3>
+            <button class="accordion__toggler-button" type="button" aria-label="Toggle content">
+              <img class="accordion__arrow-icon" src="img/icon-arrow-down.svg" alt="" width="8" height="4" aria-hidden="true">
+            </button>
+          </header>
+          <div class="accordion__item-content">
+            <p class="accordion__paragraph">Yes! Send us a message and we’ll process your request no questions asked.</p>
+          </div>
+        </section>
+
+        <section class="accordion__item">
+          <header class="accordion__item-header">
+            <h3 class="accordion__heading">Do you provide additional support?</h3>
+            <button class="accordion__toggler-button" type="button" aria-label="Toggle content">
+              <img class="accordion__arrow-icon" src="img/icon-arrow-down.svg" alt="" width="8" height="4" aria-hidden="true">
+            </button>
+          </header>
+          <div class="accordion__item-content">
+            <p class="accordion__paragraph">Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </div>
 
 
   <script src="js/main.js"></script>
