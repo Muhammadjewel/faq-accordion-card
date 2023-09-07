@@ -120,6 +120,10 @@ select:-webkit-autofill:focus {
   padding-bottom: 18px;
 }
 
+.accordion__item--active .accordion__item-header {
+  padding-bottom: 13px;
+}
+
 .accordion__heading {
   font-size: 0.8125rem;
   font-weight: 400;
@@ -205,9 +209,6 @@ select:-webkit-autofill:focus {
   display: none;
 }
 
-.card__content {
-}
-
 .card__heading {
   margin-bottom: 20px;
   font-size: 2rem;
@@ -216,8 +217,6 @@ select:-webkit-autofill:focus {
   text-align: center;
 }
 
-.card__accordion {
-}
 
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -229,6 +228,7 @@ only screen and (                min-resolution: 2dppx) {
 
 }
 
+/* 1150 */
 @media only screen and (min-width: 71.875em) {
   :root {
     --padding-vertical: 65px;
@@ -239,8 +239,16 @@ only screen and (                min-resolution: 2dppx) {
     padding-top: 129px;
   }
 
+  .accordion__item-header {
+    padding-right: 16px;
+  }
+
+  .accordion__heading {
+    font-size: 0.875rem;
+  }
+
   .card__heading {
-    margin-bottom: 28px;
+    margin-bottom: 14px;
     text-align: left;
   }
 
@@ -248,10 +256,16 @@ only screen and (                min-resolution: 2dppx) {
     position: relative;
     left: 20px;
     width: 100%;
-    padding-bottom: 84px;
-    background-image: url("../img/bg-pattern-desktop.svg");
-    background-size: 966px 945px;
-    background-position: -576px -300px;
+    padding-bottom: 74px;
+    background-image:
+      url("../img/illustration-woman-online-desktop.svg"),
+      url("../img/bg-pattern-desktop.svg");
+    background-size:
+      472px 359px,
+      966px 945px;
+    background-position:
+      -84px 70px,
+      -576px -300px;
   }
 
   .card__mobile-illustration {
