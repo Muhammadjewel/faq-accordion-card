@@ -185,7 +185,8 @@ select:-webkit-autofill:focus {
 .card {
   flex-shrink: 0;
   display: grid;
-  max-width: 57.5rem;
+  width: 100%;
+  max-width: 20.4375rem;
   padding: var(--padding-vertical) var(--padding-horizontal);
   margin: auto;
   border-radius: 23px;
@@ -247,15 +248,10 @@ only screen and (                min-resolution: 2dppx) {
     font-size: 0.875rem;
   }
 
-  .card__heading {
-    margin-bottom: 14px;
-    text-align: left;
-  }
-
   .card {
     position: relative;
     left: 20px;
-    width: 100%;
+    max-width: 57.5rem;
     padding-bottom: 74px;
     background-image:
       url("../img/illustration-woman-online-desktop.svg"),
@@ -266,6 +262,11 @@ only screen and (                min-resolution: 2dppx) {
     background-position:
       -84px 70px,
       -576px -300px;
+  }
+
+  .card__heading {
+    margin-bottom: 14px;
+    text-align: left;
   }
 
   .card__mobile-illustration {
@@ -281,6 +282,7 @@ only screen and (                min-resolution: 2dppx) {
   }
 
   .card__content {
+    width: 100%;
     max-width: 21.875rem;
     margin-left: auto;
   }
